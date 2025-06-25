@@ -1,0 +1,101 @@
+# 1) create a list and print it
+list = [4, 5, 6, 7, 8]
+for i in list:
+    print(i)
+"""
+explaination: created a list named list
+              elements 4 5 6 7 8 are assigned to the list
+              used a for loop and iterated element in list as i
+              printed i"""
+             
+             
+# 2) sum of list elements
+list1 = [2, 4, 3, 9, 7, 5, 6]
+total = 0
+for j in list1:
+    total += i
+print("the sum of the number is", total)
+"""
+explaination: created a list named is list1
+              elements 2 4 3 9 7 5 6 are assigned to the list1
+              created a variable and initialized it with 0
+              used a for loop and iterated each element in list1 as j
+              during each element we added the current value to total
+              printed the total
+              hence, got the sum of elements in  list1 """
+
+
+# 3) find the max number in the list
+list2 = [4, 8, 76, 9, 000, 45]
+max_num = list2[0]
+for k in list2:
+    if k > max_num:
+        max_num = k
+print("the maximum number in the list is", max_num)
+
+"""
+explaination: created a list named list2
+              elements 4 8 76 9 000 45 are assigned to the list2
+              created an other variable and accessed the element present in the 0th index (initialization)
+              created a for loop to iterate each element in the list2 as k
+              given a condition that if the iterated element is grater than max_num then assign that particular element as max_num
+              printed the max_num
+              hence, we got the maximum number in the list2 """
+
+
+# 4) check for a number
+list3 = [5, 7, 9, 7, 0, 4, 3]
+num = int(input("enter a number"))
+for l in list3:
+    if num == l:
+        print("the number is present in the list")
+        break
+    else:
+        print("the number is not present in the list")
+        break
+
+"""
+explaination: created a list and named it as list3
+              elements 5 7 9 7 0 4 3 are assigned to the list3
+              declared a variable named num where the uer can give the input
+              created a for loop iterate all the elements in the list3 as l
+              given a condition that if num == l
+              it checks if num is present in list3 i.r 'l'
+              if present, it prints as the number is present in the list
+              else it prints as the number is not present in the list """
+             
+             
+# 5) count odd numbers
+list4 = [4, 3, 2, 9.0, 0, 12]
+list4_0 = 0
+for m in list4:
+    if m % 2 != 0:
+        list4_0 += 1
+print("the count of odd numbers is", list4_0)
+
+'''
+explaination: created a list and named it as list4
+              elements 4 3 2 9.0 0 12 are assigned to the list4
+              declared another variable list4_0 and initialzied it with 0
+              using for loop each element in the list4 is iterated as m
+              given a condition that if m leaves the reminder as 0 when divided with 2 is not equal to 0 then add 1 to the list4_0
+              and this loops untill all the elements in the list4 are checked with the condition
+              as there are two numbers which doesnt leave reminder 0 when m divided by 2 therefore, it is printed as the count of odd numbers is list4_0 i.e the number of odd numbers in the list4
+              used if condition*** '''
+             
+# 6) reverse a list without using the reverse function/method
+list5 = [1, 0, 4, 2, 5]
+reversed_list5 = []
+for n in range(len(list5) - 1, -1, -1):
+    reversed_list5.append(list5[n])
+print("reversed list of list5 is", reversed_list5)
+
+'''
+explaination: created a lsit and named it as list5
+              elements 1 0 4 2 5 are assigned to the list list5
+              created an other empty list and named it as reversed_list5
+              using for in range loop iterated the elements in the list5 in the reverse order bu start stop and step methdo (refer chatgpt)
+              and then by using append function we haved added each reversed element to the reversed_list list
+              therefore the elemtns in list5 are printed in reverse order in the list reversed_list
+              hence the list5 is reversed_list '''
+
