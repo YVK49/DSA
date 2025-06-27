@@ -1,0 +1,41 @@
+# 9) find all pairs with a given sum
+
+list8 = [1, 2, 3, 4, 5]
+target = 6
+for p in range(len(list8)):
+    for q in range(p + 1, len(list8)):
+        if list8[p] + list8[q] == target:
+            print(
+                list8[p],
+                list8[q],
+                "are the pari of numberss which give the sum of the targeted element",
+            )
+
+"""
+explaination : Created a list named list8 containing a few numbers
+
+Declared a variable called target which holds the sum web re trying to find using two elements from the list
+
+Used a for loop to iterate through the list using the index p from 0 to the end of the list
+
+Inside that loop, used another for loop with index q starting from p + 1 to avoid repeating pairs or using the same number twice
+
+Given a condition to check if the sum of elements at positions p and q equals the target """
+
+# 10) difference between two lists
+
+list9 = [1, 2, 3, 4]
+list10 = [3, 4, 5, 6]
+list11 = []
+for r in list9:
+    if r not in list10:
+        list11.append(r)
+print(list11)
+
+"""explaination: Created a list named list9 containing some numbers
+Created another list named list10 with different numbers
+Declared an empty list named list11 to store the result
+Used a for loop to iterate over each element r in list9
+Inside the loop, checked if r is not present in list10
+If the condition is True, appended r to list11
+After the loop finished, printed list11 which contains elements from list9 that are not in list10 """
