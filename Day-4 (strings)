@@ -1,0 +1,71 @@
+# 1) print first and last characterss of a string
+str = 'sudiksha'
+print(str[0])
+print(str[-1])
+print(str[0]+str[-1])
+''' 
+explaination: declared a variable and assigned a string to it as sudiksha
+              printed the character which is in the 0th index of the string
+              printed the character which is in the -1st index of the string 
+              hence the first and the last characters of a string are printed
+              '''
+
+# 2) reversse a string without using slice()
+str1 = 'rajani'
+str2 =''
+for i in range(len(str1)-1, -1, -1):
+    str2+=str1[i]
+print(str2)
+'''
+explaination: declared a variable and assigned a string to it as rajani
+              declared another empty string and named it as str2
+              using a for loop iterated each char in the string
+              reversed the string 
+              and the added each char into the empty string 
+              printed the empty string i.e str2
+              hence the string is reversed '''
+              
+# 3) count vowels in a string and print the vowels present in the string
+str3 = 'vamshi'
+no_of_vowels = ''
+for j in str3:
+    if j == 'a' or j == 'e' or j == 'i' or j == 'o' or j == 'u':
+        no_of_vowels+=j
+print(len(no_of_vowels))
+for k in no_of_vowels:
+    print(k)
+
+'''
+explaination:   declared a variable and assigned a string to it as vamshi
+                declared another empty string and named it as no_of_vowels
+                used a for loop to iterate each char in the string as j
+                given a condition that if the j is a or e or i or o or u then add that particular char to the no_of_vowels smpty string
+                printed the length of no_of_vowels using the len() function
+                used another for loop and iterated each element in the string no_of_vowels as k 
+                printed the chars in no_of_vowels
+                therefore we get both the count of vowels and the vowels '''
+                
+# 4) remove all spaces from a string
+
+str4 = 'v a i s h u'
+print(str4.replace(' ', ''))
+'''
+explaination:   declared a variable and assigned a string with some                    intentional empty spaces 
+                using the replace() method replaced ' ' with '' which removes the empty spaces
+                printed the str4 after replacing the the empty spaces
+                therefore empty space are removed
+                '''
+                
+# 5) check if the string is a palindrome
+str5 = 'madam'
+print(str5)
+string = ''
+for z in range(len(str5)-1, -1, -1):
+    string += str5[z]
+print("reversed string", string)
+if str5 == string:
+    print("the string is a palindrome")
+'''
+    explaination:   reverssed the string and using if condition checked if
+                    both the strings are same or not if same then it is a palindrome
+                    '''
