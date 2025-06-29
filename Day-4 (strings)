@@ -69,3 +69,71 @@ if str5 == string:
     explaination:   reverssed the string and using if condition checked if
                     both the strings are same or not if same then it is a palindrome
                     '''
+                    '''
+
+# 6) count the frequency of each character in a string
+
+str6 = 'sudikshaaaa'
+dum_list = []
+for y in str6:
+    if y not in dum_list:
+        dum_list += y
+print(dum_list)
+print("the character is repeated for", str6.count(input("enter a character")), "times")
+
+'''
+explaination: declared a variable and named it as str6 
+              assigned a string as sudikshaaaa to the variable str6
+              declared an other empty list and named it as dum_list
+              created a for loop and iterated every character in the str6 as y
+              given a condition to check if the character which is iterated i.e y is present in the list or not if not founf then add that character to the empty list
+              when that is done all the duplicates are removed
+              using the count() counted the frequency of the character i.e y '''
+              
+# 7) fintd the highest frequency of a character in a string
+str7 = "sudikkkkkkkshaaaa"
+dup_list = []
+for x in str7:
+    if x not in dup_list:
+        dup_list+=x
+print(dup_list)
+print(str7.count(max(dup_list, key=str7.count)))
+'''
+explaination:   declared a variable and named it as str7
+                assigned a string sudikkkkkkkshaaaa to the variable
+                declared a variable called dup_list and created an empty list
+                using a for loop iterated eeach char in the string
+                using an if condition checked if the iterated char is present in the string or not if yes then add that char to the empty list
+                using the count() in a max() in a count() function the highest frequency char is printed
+                max(iterable, key.function) --> the iterable variable & key.function is the function done to the iterable
+                therefore the highest frequency char is printed '''
+                
+# 8) replace all vowels with *s
+str8 = "srinidhi"
+for a in str8:
+    if a == 'a' or a=='e' or a=='i' or a=='o' or a=='u':
+        str8 = str8.replace(a, '*')
+print(str8) 
+'''
+explaination:   declared a string and named it as str8
+                using a for loop iterated each char as a 
+                checked if a is a or e or i or o or u if yes then replaced the character with * using replace()
+                printed the str8 after replacing the vowel with * '''
+    
+# 9) remove duplicates from the string
+str9 = 'sudiksha'
+rep_str = ""
+for b in str9:
+    if b not in rep_str:
+        rep_str += b
+print(rep_str)
+
+'''
+explaination:   declared a variable and named it as str9
+                assigned it a string which is sudiksha
+                created another empty string and named the variable as rep_str
+                using a for loop iterated every char in the char
+                checked if the iterated char is in rep_str if yes then add that char to the rep_str
+                printed rep_list therefore, all the duplicates in the list are removed
+                '''
+
