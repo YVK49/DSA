@@ -1,0 +1,43 @@
+# 1) converts a string into a list of characters and exclude all the special characters and vowels
+str = "sud!ksh@"
+list1 = []
+for i in str:
+    if i not in 'aeiou' and i not in '!@#$%^&*()':
+        list1 += i
+print(list1)
+'''
+explaination:   declared a string and named it as str
+                assigned a string to it i.e sud!ksh@
+                declared a variable and created an empty list and named it as list1
+                using a for loopo iterated each character in the str
+                using if not in condition checked if the special char or vowel is present in the string if yes then do not add it to the empty list1
+                if not then add that element to the lsit1 list 
+                peinted list1
+                hence, converted a string into a list and removed all the special characters and vowels '''
+                
+# 2) convert a list of characters into a string but skip the duplicates and replace duplicates with '-'
+list0 = ['a', 'n', 'k', 'a', 'p', 'a', 'l', 'l', 'y']
+str0 = ""
+for a in list0:
+    if a in str0:
+        str0=str0.replace(a, '-')
+        str0 += '-'
+    else:
+        str0+=a
+print(str0)
+'''
+explaination:   declared a variable and named it as lsit0 created a list to store the characters anakapally
+                declared another empty string andd named it as str0
+                using a forloop iterated each element in the list
+                checked f the element is repeated or not if repeated it will be replaced with '-'
+                if not then the iterated element will be added into the empty sting wihtout replacing
+                print the string 
+                therefore the string list is converted into a string skipping all the duplicates and replaced with '-'
+'''
+# 3) split a paragraph or a sentence into a list of words and also remove the puncutaion marks and special characters
+sentence = "fuck!!!!!!!!!!!, i dont give a f**k about the breakup"
+for m in sentence:
+    if m in '!@#$%^&*()<>?:':
+        sentence = sentence.replace(m, '')
+words = sentence.split()
+print(words)
