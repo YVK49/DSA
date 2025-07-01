@@ -1,0 +1,29 @@
+
+# 4) join a list of words into sentence with capitalized words and commas
+list = ["hello", "world", "am", "learning", "python"]
+capitalized = [word.capitalize() for word in list]
+result = ', '.join(capitalized)
+print(result)
+'''
+explaination:   declared a variable and created a list of words and named the variable as list
+                declared another variable and named it as capitalized 
+                capitalized each word in the list by iterating each word in the list using capitalize() method
+                declared another variable as result and using join() method joined ', ' to the end of each word 
+                printed result 
+                therefore joined a list of words into sentence with capitalized words and commas
+                '''
+# 5) reversed every word in a sentence
+propose = "i love you"
+words = propose.split()
+reversed_words = [word[::-1] for word in words]
+final_sentence = " ".join(reversed_words)
+print(final_sentence)
+'''
+explaination:   declare a variable and named it as propose 
+                assigned a sentence "i love you"
+                using the split() method splitted the words in the sentence and stroed it in a variable words
+                using a for loop and negative slicing we have reversed the words and stored the reversed word in that variable
+                by using join() method we have joined a blacnk space in between each and every word and stroed it a variable called final_sentence
+                printed the final final_sentence
+                therefore, each word in the sentence has been reversed
+            '''
