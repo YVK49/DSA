@@ -1,0 +1,92 @@
+🧠 Functions & Recursion in Python – A Beginner-Friendly Guide
+
+📌 What is a Function?
+
+A function is a block of reusable code that performs a specific task. It helps break programs into smaller, manageable parts.
+
+✅ Syntax:
+
+def function_name(parameters):
+    # code block
+    return result
+
+✅ Example:
+
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Vamshi"))
+
+🔁 What is Recursion?
+
+A recursive function is a function that calls itself to solve a smaller part of the problem.
+
+🔄 Basic Rules:
+
+Base Case: A condition to stop recursion.
+
+Recursive Call: The function calls itself with modified input.
+
+✅ Example:
+
+def print_numbers(n):
+    if n == 0:
+        return
+    print_numbers(n - 1)
+    print(n)
+
+print_numbers(5)
+
+🧒 Layman Explanation:
+
+Imagine stacking books one by one.
+
+When you reach the last book, you stop.
+
+Then you start removing and reading the numbers as you go back.
+
+That’s how recursion works:
+
+Go down until the smallest problem (base case),
+
+Come back up solving or printing.
+
+🔀 What’s the Difference Between Function & Recursive Function?
+
+Feature
+
+Normal Function
+
+Recursive Function
+
+Calls itself
+
+❌ No
+
+✅ Yes
+
+Used for loops
+
+✅ Sometimes
+
+✅ Often
+
+Needs base case
+
+❌ No
+
+✅ Yes (to stop)
+
+🎯 What’s Next?
+
+Now that you’ve learned about functions and recursion, here’s the learning path ahead:
+
+🚀 Next Topics to Learn:
+
+Time & Space Complexity – Understand how efficient your code is.
+
+Two Pointer Technique – Great for solving array and string problems.
+
+Sliding Window – Optimized approach for subarray or substring problems.
+
+We’ll learn them one by one and then solve questions based on each concept to build mastery.
