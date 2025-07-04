@@ -46,3 +46,10 @@ Analyze nested loops, recursion, and branching separately and combine appropriat
 
 📌 Summary:
 
+
+
+
+
+
+
+the constants are cancelled out only if we are considering the worst case scenario while calculating the time complexity 
