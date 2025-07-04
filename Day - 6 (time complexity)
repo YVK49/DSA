@@ -1,0 +1,48 @@
+⏳ What is Time Complexity?
+
+Time Complexity is a theoretical concept used in computer science to describe the amount of time an algorithm takes to complete as a function of the size of its input.
+
+It helps evaluate the efficiency of an algorithm.
+
+It is expressed using Big O Notation which describes the worst-case scenario.
+
+📏 How is Time Complexity Measured?
+
+Time complexity is not measured in seconds, but in the number of elementary operations an algorithm performs as input grows.
+
+We usually denote the size of input by n.
+
+The total time is represented in terms of how fast the number of operations grows with respect to n.
+
+🧮 Big O, Omega, and Theta Notations
+
+🔹 Big O (O): Worst-Case Time Complexity
+
+Represents the upper bound.
+
+Tells us the maximum time an algorithm can take for an input of size n.
+
+🔹 Omega (Ω): Best-Case Time Complexity
+
+Represents the lower bound.
+
+Tells us the minimum time an algorithm will take for the best possible input.
+
+🔹 Theta (Θ): Average-Case Time Complexity
+
+Represents the tight bound.
+
+Tells us the expected time an algorithm will take on average.
+
+🧠 How to Analyze Time Complexity:
+
+Focus on how many times loops or operations run relative to n.
+
+Drop constants (e.g., O(2n) becomes O(n)).
+
+Ignore less significant terms (e.g., O(n^2 + n) becomes O(n^2)).
+
+Analyze nested loops, recursion, and branching separately and combine appropriately.
+
+📌 Summary:
+
