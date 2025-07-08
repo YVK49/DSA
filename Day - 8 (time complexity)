@@ -1,0 +1,167 @@
+
+🔰 1. What is Time Complexity?
+Time Complexity is a measure of how an algorithm's runtime increases as the input size n increases. We ignore the hardware and software and just count the number of operations.
+
+📏 2. Order of Time Complexities
+Here’s a ranking of common time complexities from best to worst (for performance):
+
+Big-O Notation	Name	Order of Growth	Performance
+O(1)	Constant	1	🔥 Fastest (Best)
+O(log n)	Logarithmic	Slows down quickly	🚀 Very Fast
+O(n)	Linear	Increases directly with n	✅ Acceptable
+O(n log n)	Linearithmic	Slightly more than linear	⚠️ Efficient
+O(n²)	Quadratic	Squared growth	🐢 Slow
+O(n³)	Cubic	Cubed growth	🐌 Slower
+O(2ⁿ)	Exponential	Explodes fast	❌ Unusable
+O(n!)	Factorial	Worst case ever	💀 Extremely Slow
+
+📊 3. Graphical Representation
+X-axis → Input Size (n)
+Y-axis → Operations / Time
+mathematica
+Copy
+Edit
+     |
+ T(n)|                                     O(n!)
+     |                             O(2^n)
+     |                       O(n^3)
+     |                 O(n^2)
+     |          O(n log n)
+     |      O(n)
+     |   O(log n)
+     |___O(1)__________________________________→ n
+O(1): Flat line. Always fast.
+
+O(log n): Grows slowly even for large inputs.
+
+O(n²), O(n³): Becomes unusable for large n.
+
+O(2ⁿ), O(n!): Even n = 30 can kill your computer 💻💀
+
+✅ 4. Best, Average, and Worst Case
+🔹 Best Case
+The input is in the most favorable condition.
+
+e.g., Linear Search finds target at first index.
+
+Not reliable for analysis.
+
+🔹 Worst Case
+Input is in the least favorable condition.
+
+e.g., Binary Search keeps splitting till 1 element left.
+
+Used in most time complexity discussions. ✅
+
+🔹 Average Case
+Input is random.
+
+Often hard to calculate. Usually estimated.
+
+Algorithm	Best	Average	Worst
+Linear Search	O(1)	O(n)	O(n)
+Binary Search	O(1)	O(log n)	O(log n)
+Bubble Sort	O(n)	O(n²)	O(n²)
+Merge Sort	O(n log n)	O(n log n)	O(n log n)
+Quick Sort	O(n log n)	O(n log n)	O(n²)
+
+🧠 5. Memory Complexity (Auxiliary Space)
+Don’t forget Space Complexity — how much extra memory your algorithm uses.
+
+In-place algorithm → O(1)
+
+Using recursion/arrays → O(log n), O(n), etc.
+
+Example:
+
+python
+Copy
+Edit
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+Time: O(n)
+
+Space: O(n) due to call stack (recursion)
+
+🔍 6. Real-World Analogy
+You have a phonebook:
+Search Type	Time Complexity	Analogy
+Linear Search	O(n)	Look from start to end
+Binary Search	O(log n)	Open in middle → Split
+Hash Table Lookup	O(1)	Jump to direct contact
+
+🛠️ 7. How to Analyze Any Code Block – Universal Method
+Look at loops
+
+How many times they run? (n, log n, n²?)
+
+Nested? Multiply
+
+Outer O(n) and Inner O(log n) → O(n log n)
+
+Recursion? Use Tree or Formula
+
+Use recurrence relation or tree expansion
+
+Multiple independent loops? Add
+
+O(n) + O(n) → O(n)
+
+Ignore constants
+
+O(2n) → O(n)
+
+Worst-case by default
+
+Unless question specifies best/average case
+
+✔️✔️✔️ 8. Python Tutor Visualization
+Use https://pythontutor.com to:
+
+See how variables change line-by-line
+
+Understand loops, recursions, and memory flow
+
+Visualize algorithm step-by-step
+
+🧩 9. Practice Questions
+🔰 Easy
+for i in range(n): print(i)
+
+i = 1; while i <= n: i *= 2
+
+for i in range(n): for j in range(n): print(i, j)
+
+⚙️ Medium
+for i in range(n): for j in range(i, n): print(i, j)
+
+for i in range(n): for j in range(1, n, 2): print(i, j)
+
+while n > 0: n = n // 2
+
+🔥 Advanced
+mergeSort(arr, left, right)
+
+Recursive Fibonacci
+
+Ternary recursion:
+
+python
+Copy
+Edit
+def f(n):
+    if n == 0: return
+    f(n//2)
+    f(n//2)
+    f(n//2)
+Matrix multiplication:
+
+python
+Copy
+Edit
+for i in range(n):
+    for j in range(n):
+        for k in range(n):
+            res[i][j] += A[i][k] * B[k][j]
