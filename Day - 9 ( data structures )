@@ -1,0 +1,35 @@
+what are data structures ? 
+  data structures are ways to store and organize the data 
+  there are certain difficulties in computer science which are very hard to solve. we use data structures to solve them efficiently which helps in saving time and space complexity
+  types of data structures-f
+                          |--linear data structures ------------------------|
+                          |                                                 |--arrays --------|
+                          |                                                                   |--referncial arrays ( call by refence arryas) -	Function gets access to original array
+                          |                                                                   |-- call by value arrays - functions gets access to a duplicate array where there will be no change in the original array
+                          |                                                 |--linked-lists
+                          |                                                 |--queues
+                          |                                                 |--stacks
+                          |                                                 |--hash tables
+                          |
+                          |                          
+                          |
+                          |--non-linear data structures --------|
+                          |                                     |--graphs
+                          |                                     |--trees
+                          |                                      
+                          |                 
+Arrays :
+  a data structure used to store multiple items of same data type in a continuus memory location
+  ex:- storing a adhar numbers of each a city
+       list of contact numbers
+  Disadvantages of arrays:
+    1) homogenous (it is solved by using the call by reference technique) 
+    2) fixed size ( it can be solved by dynamic arrays )
+  what is dynamic array:
+    an array whos size can adjusted when we add or delete elements in the array (in python list is a dynamic array and the list is called by reference so there is no wastage of memory and problem with hommogenous data types storage )
+    in simple terms 
+      *its size is resizable 
+      *its memory grows dynamically 
+      *slightly slower than the static array when the size of the array is adjusted i.e resized
+  
+                                                            
