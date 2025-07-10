@@ -31,5 +31,5 @@ Arrays :
       *its size is resizable 
       *its memory grows dynamically 
       *slightly slower than the static array when the size of the array is adjusted i.e resized
-  
+  in python lsits are considered as arrays they dynamic arrays in default they can be resized accordingly 
                                                             
