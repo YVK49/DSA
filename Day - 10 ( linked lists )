@@ -1,0 +1,12 @@
+linked lists:
+  its a linear data structure and its is a replacments of list/arrays in python 
+how do they work
+  basically it is the combination of nodes where in each node contain the data and the memory location of the data present in the next node 
+  the first node of a linked list is said to be {HEAD}
+  the last node of a linked list is said to be {TAIL}
+  in simple terms ( consider each node as an object which contains items in them )
+why linked list is better than an array:
+  1) in an array if there are n items and want to delete an element its time complexity is 0(n) but if there is a linked list and we had to perform an operation then the time complexity is 0(1) where constant growth of order is more efficient than the linear growth of order 
+  2) the issue of time complexity is solved by using a linked list
+  3) different data structures can be derived using linked lists
+  4) for write operations the time complexity is better than array but where as in read operations the time complexity of a linked list is not as good as the time complexity of a an array
