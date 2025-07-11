@@ -1,12 +1,154 @@
-linked lists:
-  its a linear data structure and its is a replacments of list/arrays in python 
-how do they work
-  basically it is the combination of nodes where in each node contain the data and the memory location of the data present in the next node 
-  the first node of a linked list is said to be {HEAD}
-  the last node of a linked list is said to be {TAIL}
-  in simple terms ( consider each node as an object which contains items in them )
-why linked list is better than an array:
-  1) in an array if there are n items and want to delete an element its time complexity is 0(n) but if there is a linked list and we had to perform an operation then the time complexity is 0(1) where constant growth of order is more efficient than the linear growth of order 
-  2) the issue of time complexity is solved by using a linked list
-  3) different data structures can be derived using linked lists
-  4) for write operations the time complexity is better than array but where as in read operations the time complexity of a linked list is not as good as the time complexity of a an array
+what is a linked list ?
+  *it is a linear data structure whos memory location is non-continuous
+  *it is a collection of nodes
+what is a node ? 
+  *node is an object in which there are two parts
+    !) the one which stores the data
+    2) and the other one is where the memory address of the next node is stored (image in the extended description) and therefore a link is created and called a linked list
+terminology of a linked list: 
+  *head: it is the first and foremost node is called a head ( image in the extended description )
+  *tail: it is the last node where the memory address is null ( image in the extended description )
+difference between an array and the linked list: 
+  *in case of an array we require large amount of continuous memory to store the data
+  *in case of a linked-list we dont require the continuous memory to store the data which means linked list stores data in non-continuous memory locations which helps in reducing the space complexity
+how to create an individual node using a class
+---------------------------------------------------------------------------------------------------------------------
+    """ code block"""
+    # a class to create a node 
+class node:
+    def __init__(self, value):
+        self.data = value
+        self.next = None
+        
+#storing the data in the linked list 
+a = node(3)
+b = node(2)
+c = node(1)
+# stroring the memory location of the data in present in the next node and creating a linked list 
+a.next = b
+b.next = c
+# printing the memory location of each element in the linked list
+print(a.next, a.data)
+print(b.next, b.data)
+print(c.next, c.data)
+
+      """" end of the code block"""
+--------------------------------------------------------------------------------------------------------------------
+expected output: 
+---------------------
+memory location(3) 3
+memory location(2) 2
+memory location(1) 1
+
+NOTE:- the output may not be accurate please try it on your own and please contribute the changes and documentation
+-------------------------------------------------------------------------------------------------------------------
+but in the above example there is no connection between the nodes so it is not forming a linked list 
+the above code block is just to create a node
+to establish the connection between nodes we should store the memory address of data in a node in the next node (read these 3 points very clearly it seems like we got the catch but no we will face issues if we dont understand it clearly use NOTEBOOKLM.AI for more clarity )
+-------------------------------------------------------------------------------------------------------------------
+here are the extra lines of code to store the memory location of the data present in the next
+a.next = b
+b.next = c
+by now the memory location of b is stored in a and the memory location of c is none as we dont have any other node next to c so there fore this forms a linked list
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+operations in a linked list--
+                            |
+                            |-----insertion---------
+                            |                      |---head
+                            |                      |---tail (append)
+                            |                      |---middle (insert )
+                            |
+                            |-----traverse----print()
+                            |
+                            |-----deletion---------
+                            |                     |---head
+                            |                     |---tail(POP)
+                            |                     |---value(remove)
+                            |                     |---index
+                            |
+                            |-----searching-------
+                            |                    |---value
+                            |                    |---index
+                            |                    |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
