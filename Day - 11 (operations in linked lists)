@@ -22,6 +22,7 @@ class LinkedList:
         slef.n = 0
     def __len__(Self):
         return self.n
+# a function to add an node at the head of the linkedlist
     def insert_head (self, value):
 #creating a new node in the linkedlist
         new_node = Node(value)
@@ -31,9 +32,29 @@ class LinkedList:
         self.head = new_node
 # increment the value of n for a flexible counting 
         slef.n = slef.n + 1
+# a function to traverse the nodes
+    def __str__(self):
+# assume the head node as the current node
+        curr = self.head
+# an empty string to store the linkedlist
+        result = " "
+# a while loop to iterate the curr till the node is None
+        while curr is not None:
+# if the condition is true then result will be added by the data in the current node and the string "->" right next to it
+            result = result + str(curr.data) + "->"
+# after that then consider the next node as the current node and loop untill the condition is satisfied
+            curr = curr.next
+        return result[:-2]
+# curr is a varibale where we store the head of the linkedlist, result is a variable where we store the traversal of the linkedlist
+using a while loop if the curr node is not None then add the data in the node to the list and concatinate it with "->" now after the
+current is iterated to the next node untill the current is not None then return the result and slice the last 2 strings from the linked
+list then print the traversal of the linkedlist
 L = LinkedList()
 L.insert_head(1)
 L.insert_head(2)
 L.insert_head(3)
 L.insert_head(4)
-***********************************************************traversing a linked list*************************************************************************
+
+
+
+
