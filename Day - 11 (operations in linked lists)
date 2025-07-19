@@ -32,6 +32,7 @@ class LinkedList:
         self.head = new_node
 # increment the value of n for a flexible counting 
         slef.n = slef.n + 1
+----------------------------------------------------------------------------------traversal--------------------------------------------------------------------------------------
 # a function to traverse the nodes
     def __str__(self):
 # assume the head node as the current node
@@ -54,9 +55,3 @@ L.insert_head(1)
 L.insert_head(2)
 L.insert_head(3)
 L.insert_head(4)
-
-
-
-
-
-
